@@ -18,3 +18,6 @@ getOrDefault -> 해당하는 값이 있으면 가져오고 아니면 Default 0�
 get(key) -> key에 해당하는 value를 가져와라.
 등의 새로운것들을 배웠다. 이런것들이 모두 익숙해져야 자바 쓰기 더 용이할듯 하다.
 내일은 오후3시에 알고리즘 모의시험이 있다. 잘 할 수 있겠지??
+
+해당 문제 내 풀이 링크
+https://velog.io/@younggyun12/Java-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%9C-%EC%84%A0%EC%88%98
