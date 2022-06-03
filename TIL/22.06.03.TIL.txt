@@ -1,0 +1,24 @@
+22.06.03. 금요일
+
+항해99 D+26
+
+새로운 한 주차가 밝았다. 이번주차는 주특기 심화주차인데, 따로 강의는 없다.
+과제가 주어졌는데, 배달어플에 사용되는 API를 설계하는게 과제였다.
+음식점, 그리고 그 음식점의 음식들, 주문 등의 정보를 조건에 맞춰서 API로
+구성하는것이다. 일단 조건들을 달아서 Illegalargumentexception은 exception이라는
+패키지를 따라 만들고 exceptionMessages class 안에 모두 모아서 처리하는걸 알게 되었다. 
+exception이 필요한 곳에 throw new illegalargumentexception(CANT_FIND_FOOD) 
+이런 식으로 exception을 붙여놓고, exceptionMessages 클래스에서 
+public static final String CANT_FIND_FOOD = "해당 음식이 없습니다.";
+이런식으로 초기화를 시키는 것이다. 모든 exception들을 한 곳에 모아서 처리해서, 어떤
+오류 문구를 내야하는지 한번에 확인할 수 있고, 빠진건 없는지 확인도 간단해졌다.
+그리고 swagger라는 것도 알게 되었는데 build.gradle에서 
+//Swagger 적용
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+    implementation 'io.springfox:springfox-swagger-ui:3.0.0'
+이걸 추가해서 적용시켜주어야 했다. Swagger를 사용하는 이유는, 적용하기가 쉽기 때문이다.
+Spring REST Docs라는 문서화 도구와는 달리 Swagger는 코드 몇 줄만 추가하면 만들 수 있다.
+그리고 테스트 할 수 있는 UI를 제공한다. Swagger는 문서 화면에서 API를 바로 테스트 할 수 있다.
+
+참고 URL
+https://antstudy.tistory.com/251?category=895343
